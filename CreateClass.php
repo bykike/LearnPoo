@@ -1,9 +1,22 @@
 <?php
 
+// Ejemplos 1
+
 class Cohete {
     public $color;
     public $potencia;
     public $marca;
+
+    // El método getColor() nos permite devolver el color del objeto instanciado. 
+    // La variable $this se puede utilizar en cualquier método, y hace referencia 
+    // al objeto que hemos instanciado, en este caso $miCohete. Podemos obtener el mismo 
+    // resultado que antes para mostrar el color del coche pero ahora utilizando un método 
+    // para mostrar la propiedad color
+    public function getColor()
+    {
+        return $this->color;
+    }
+
 }
 
 $miCohete = new Cohete();
@@ -13,6 +26,10 @@ $miCohete->marca = 'audi';
 
 echo 'Color del Cohete: ' . $miCohete->color;
 echo '<br/><br/>';
+
+echo 'Color del Cohete: ' . $miCohete->getColor();
+echo '<br/><br/>';
+
 
 // Ejemplos 2
 
