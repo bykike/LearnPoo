@@ -64,16 +64,19 @@ class Coche {
     <?php
         // Creamos el objeto / Instanciamos la clase y le pasamos los parámetros del constructor
         $coche = new Coche("BMW VICTOR", "ROJO", 100);
-
-
         // Mostramos la información del primer coche
         echo $coche->mostrarInfo();
+        var_dump($coche);
 
         $coche2 = new Coche("SEAT 500", "VERDE");
-
         // Mostramos la información del segundo coche
         echo $coche2->mostrarInfo();
         var_dump($coche2);
+
+        $coche3 = new Coche("CLIO", "ROSA");
+        // Mostramos la información del segundo coche
+        echo $coche3->mostrarInfo();
+        var_dump($coche3);
     ?>
 
     </body>
