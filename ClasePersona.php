@@ -48,13 +48,14 @@ class Persona {
  
 }
  
-$persona = new Persona("Enrique", "Gomez Solves", 13);
+$persona = new Persona("Enrique", "Gomez Solves", 18);
  
 if($persona->mayorEdad()){
-    echo $persona->nombreCompleto(). " es mayor de edad";
+    echo $persona->nombreCompleto(). " es mayor de edad.";
 }else{
-    echo $persona->nombreCompleto(). " no es mayor de edad";
+    echo $persona->nombreCompleto(). " no es mayor de edad.";
 }
  
 echo $persona->nombr2;
+
 ?>
